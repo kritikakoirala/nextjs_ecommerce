@@ -20,9 +20,9 @@ export default function Search() {
             {
               categories?.length > 0 &&
 
-              categories?.map(cat => {
+              categories?.map((cat, index) => {
                 return (
-                  <SelectItem value={cat} > {cat}</SelectItem>
+                  <SelectItem value={cat} key={index}> {cat}</SelectItem>
 
                 )
               })

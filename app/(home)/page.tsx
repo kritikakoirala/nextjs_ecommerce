@@ -1,9 +1,10 @@
-
+import HomeCarousel from "@/components/shared/home/home-carousel";
+import data from "@/lib/data";
 
 export default function Home() {
   return (
     <>
-      This is Homepage Content
+      <HomeCarousel items={data?.carousels} />
     </>
   );
 }
